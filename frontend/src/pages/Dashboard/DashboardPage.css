@@ -1,0 +1,124 @@
+.dashboard-page {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.dashboard-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.dashboard-card svg {
+  color: var(--text-tertiary);
+}
+
+.dashboard-card span {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.dashboard-card strong {
+  color: var(--text-primary);
+  font-size: 26px;
+  line-height: 1;
+}
+
+.dashboard-card--info svg { color: var(--info); }
+.dashboard-card--success svg { color: var(--success); }
+.dashboard-card--warning svg { color: var(--warning); }
+.dashboard-card--accent svg { color: var(--accent); }
+.dashboard-card--danger svg { color: var(--danger); }
+
+.dashboard-panels {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(360px, 1.2fr);
+  gap: 14px;
+}
+
+.dashboard-panel {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.dashboard-panel__header {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-panel__header h2 {
+  font-size: 14px;
+}
+
+.dashboard-panel__header svg {
+  color: var(--text-tertiary);
+}
+
+.dashboard-system {
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.dashboard-system div,
+.dashboard-message {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px;
+}
+
+.dashboard-system span,
+.dashboard-message span {
+  color: var(--text-tertiary);
+  font-size: 11px;
+}
+
+.dashboard-system strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-primary);
+  font-size: 13px;
+}
+
+.dashboard-message-list {
+  padding: 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.dashboard-message {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: start;
+}
+
+.dashboard-message strong {
+  font-size: 12px;
+}
+
+.dashboard-message p {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-top: 4px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.45;
+}

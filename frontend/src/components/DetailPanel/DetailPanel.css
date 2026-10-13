@@ -1,0 +1,96 @@
+.detail-panel {
+  border-top: 1px solid var(--border);
+  background: var(--bg-secondary);
+  animation: slideDown var(--transition-slow) ease forwards;
+  overflow: hidden;
+}
+
+.detail-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.detail-panel__title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail-panel__title-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--accent);
+}
+
+.detail-panel__close {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--text-tertiary);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.detail-panel__close:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.detail-panel__body {
+  padding: 16px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.detail-panel__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-panel__label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-panel__value {
+  font-size: 13px;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.detail-panel__value--mono {
+  font-family: 'SF Mono', 'Cascadia Code', Consolas, monospace;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.detail-panel__message-body {
+  grid-column: 1 / -1;
+  background: var(--bg-primary);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  font-size: 12px;
+  font-family: 'SF Mono', 'Cascadia Code', Consolas, monospace;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  white-space: pre-wrap;
+  max-height: 120px;
+  overflow-y: auto;
+}

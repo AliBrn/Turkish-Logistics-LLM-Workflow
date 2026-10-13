@@ -1,0 +1,193 @@
+[
+  {
+    "id": 1,
+    "kategori": "Komple Tır / Açık 1360",
+    "metin": "Mersin -> Batman\nYük: 20 Ton kasa içi makina\nAraç Tipi: Açık 1360\nYükleme: Yarın sabah\nİletişim: 0555 100 20 01 - Alfa Lojistik",
+    "beklenen_cikti": {
+      "siparis_sayisi": 1,
+      "siparisler": [
+        {
+          "nereden": "Mersin",
+          "nereye": "Batman",
+          "yuk_tipi": "YÜKÜSTÜ",
+          "arac_tipi": "1360",
+          "kasa_tipi": "AÇIK"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "kategori": "Çoklu Rota / Frigo",
+    "metin": "Mersin Çıkışlı Frigo Tır Yükleri:\nMersin -> Ankara Frigo Tır\nMersin -> Konya Frigo Tır\nMersin -> Kayseri Frigo Kamyon\nTel: 0555 100 20 02 (Ege Taşımacılık)",
+    "beklenen_cikti": {
+      "siparis_sayisi": 3,
+      "siparisler": [
+        {
+          "nereden": "Mersin",
+          "nereye": "Ankara",
+          "yuk_tipi": "KOMPLE",
+          "arac_tipi": "1360",
+          "kasa_tipi": "FRİGO"
+        },
+        {
+          "nereden": "Mersin",
+          "nereye": "Konya",
+          "yuk_tipi": "KOMPLE",
+          "arac_tipi": "1360",
+          "kasa_tipi": "FRİGO"
+        },
+        {
+          "nereden": "Mersin",
+          "nereye": "Kayseri",
+          "yuk_tipi": "KOMPLE",
+          "arac_tipi": "10 TEKER",
+          "kasa_tipi": "FRİGO"
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "kategori": "Parsiyel / Kapalı 10 Teker",
+    "metin": "SABAH ESENLER -> KEŞAN 0-5 TON KAPALI ON TEKER\nAcil araç aranmaktadır.\nİletişim: 0555 100 20 03",
+    "beklenen_cikti": {
+      "siparis_sayisi": 1,
+      "siparisler": [
+        {
+          "nereden": "İstanbul/Esenler",
+          "nereye": "Edirne/Keşan",
+          "yuk_tipi": "PARÇA",
+          "arac_tipi": "10 TEKER",
+          "kasa_tipi": "KAPALI"
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "kategori": "Dökme / Damperli",
+    "metin": "Kızıltepe -> Malatya Dökme Mısır işi var. 27 Ton.\nKısa dorse veya damperli tır olur.\nTel: 0555 100 20 04",
+    "beklenen_cikti": {
+      "siparis_sayisi": 1,
+      "siparisler": [
+        {
+          "nereden": "Mardin/Kızıltepe",
+          "nereye": "Malatya",
+          "yuk_tipi": "DÖKME",
+          "arac_tipi": "860",
+          "kasa_tipi": "DAMPERLİ"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "kategori": "Alternatifli Kasa / Açık + Kapalı",
+    "metin": "Gebze -> Bursa Nilüfer paletli koli yükü. 12 Ton.\nAçık kapalı fark etmez 1360.\n0555 100 20 05 - Marmara Lojistik",
+    "beklenen_cikti": {
+      "siparis_sayisi": 1,
+      "siparisler": [
+        {
+          "nereden": "Kocaeli/Gebze",
+          "nereye": "Bursa/Nilüfer",
+          "yuk_tipi": "PALETLİ",
+          "arac_tipi": "1360",
+          "kasa_tipi": "AÇIK + KAPALI"
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "kategori": "Ağır Nakliyat / Lowbed",
+    "metin": "Ankara Kazan OSB -> İzmir Aliağa ekskavatör taşınacak.\nLowbed araç lazım. Tonaj 32 ton.\nİletişim: 0555 100 20 06",
+    "beklenen_cikti": {
+      "siparis_sayisi": 1,
+      "siparisler": [
+        {
+          "nereden": "Ankara/Kahramankazan",
+          "nereye": "İzmir/Aliağa",
+          "yuk_tipi": "YÜKÜSTÜ",
+          "arac_tipi": "1360",
+          "kasa_tipi": "LOWBED"
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "kategori": "Şehir İçi Kamyonet",
+    "metin": "Tuzla Deri OSB -> İkitelli OSB 3 palet tekstil 1.5 ton.\nPanelvan veya kapalı kamyonet.\nTel: 0555 100 20 07",
+    "beklenen_cikti": {
+      "siparis_sayisi": 1,
+      "siparisler": [
+        {
+          "nereden": "İstanbul/Tuzla",
+          "nereye": "İstanbul/Başakşehir",
+          "yuk_tipi": "PALETLİ",
+          "arac_tipi": "KAMYONET",
+          "kasa_tipi": "KAPALI"
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "kategori": "Kırkayak / Dökme Hammadde",
+    "metin": "İskenderun Liman -> Osmaniye OSB dökme cüruf.\nKırkayak araç aranıyor. Günlük düzenli sefer.\nİletişim: 0555 100 20 08",
+    "beklenen_cikti": {
+      "siparis_sayisi": 1,
+      "siparisler": [
+        {
+          "nereden": "Hatay/İskenderun",
+          "nereye": "Osmaniye",
+          "yuk_tipi": "DÖKME",
+          "arac_tipi": "KIRKAYAK",
+          "kasa_tipi": "DAMPERLİ"
+        }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "kategori": "Çoklu Yük / Karma Güzergah",
+    "metin": "Çerkezköy -> Ankara Ostim 10 palet hammadde\nÇerkezköy -> Bolu 5 palet koli\nAçık veya tenteli tır\nTel: 0555 100 20 09",
+    "beklenen_cikti": {
+      "siparis_sayisi": 2,
+      "siparisler": [
+        {
+          "nereden": "Tekirdağ/Çerkezköy",
+          "nereye": "Ankara/Yenimahalle",
+          "yuk_tipi": "PALETLİ",
+          "arac_tipi": "1360",
+          "kasa_tipi": "AÇIK + KAPALI"
+        },
+        {
+          "nereden": "Tekirdağ/Çerkezköy",
+          "nereye": "Bolu",
+          "yuk_tipi": "PALETLİ",
+          "arac_tipi": "1360",
+          "kasa_tipi": "AÇIK + KAPALI"
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "kategori": "İş Makinesi / Kamyon Üstü Ekipman",
+    "metin": "Konya Selçuklu -> Samsun Liman 1 adet forklift 4.5 ton.\nAçık 10 teker veya 1360 yüküstü.\nİletişim: 0555 100 20 10",
+    "beklenen_cikti": {
+      "siparis_sayisi": 1,
+      "siparisler": [
+        {
+          "nereden": "Konya/Selçuklu",
+          "nereye": "Samsun",
+          "yuk_tipi": "YÜKÜSTÜ",
+          "arac_tipi": "10 TEKER + 1360",
+          "kasa_tipi": "AÇIK"
+        }
+      ]
+    }
+  }
+]

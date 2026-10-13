@@ -1,0 +1,133 @@
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+.status-badge__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-badge--yeni {
+  background: var(--info-bg);
+  color: var(--info);
+}
+.status-badge--yeni .status-badge__dot {
+  background: var(--info);
+}
+
+.status-badge--bekliyor {
+  background: var(--warning-bg);
+  color: var(--warning);
+}
+.status-badge--bekliyor .status-badge__dot {
+  background: var(--warning);
+}
+
+.status-badge--isleniyor {
+  background: rgba(108, 92, 231, 0.1);
+  color: var(--accent);
+}
+.status-badge--isleniyor .status-badge__dot {
+  background: var(--accent);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.status-badge--islendi {
+  background: var(--success-bg);
+  color: var(--success);
+}
+.status-badge--islendi .status-badge__dot {
+  background: var(--success);
+}
+
+.status-badge--hata {
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+.status-badge--hata .status-badge__dot {
+  background: var(--danger);
+}
+
+.status-badge--inceleniyor {
+  background: var(--warning-bg);
+  color: var(--warning);
+}
+.status-badge--inceleniyor .status-badge__dot {
+  background: var(--warning);
+}
+
+.status-badge--is-kuyrugunda {
+  background: var(--success-bg);
+  color: var(--success);
+  box-shadow: inset 0 0 0 1px rgba(0, 214, 143, 0.16);
+}
+.status-badge--is-kuyrugunda .status-badge__dot {
+  background: var(--success);
+}
+
+.status-badge--bekletiliyor {
+  background: rgba(124, 138, 165, 0.14);
+  color: #a8b5ce;
+}
+.status-badge--bekletiliyor .status-badge__dot {
+  background: #a8b5ce;
+}
+
+.status-badge--sevkiyatta {
+  background: rgba(45, 212, 191, 0.12);
+  color: #5eead4;
+}
+.status-badge--sevkiyatta .status-badge__dot {
+  background: #2dd4bf;
+}
+
+.status-badge--arac-bekleniyor {
+  background: rgba(255, 170, 0, 0.08);
+  color: #e09600;
+}
+.status-badge--arac-bekleniyor .status-badge__dot {
+  background: #e09600;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.status-badge--sofore-atandi {
+  background: rgba(108, 92, 231, 0.1);
+  color: var(--accent);
+}
+.status-badge--sofore-atandi .status-badge__dot {
+  background: var(--accent);
+}
+
+.status-badge--tamamlandi {
+  background: var(--success-bg);
+  color: var(--success);
+}
+.status-badge--tamamlandi .status-badge__dot {
+  background: var(--success);
+}
+
+.status-badge--iptal {
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+.status-badge--iptal .status-badge__dot {
+  background: var(--danger);
+}
+
+.status-badge--manuel-kontrol {
+  background: rgba(255, 107, 53, 0.1);
+  color: #ff6b35;
+}
+.status-badge--manuel-kontrol .status-badge__dot {
+  background: #ff6b35;
+}

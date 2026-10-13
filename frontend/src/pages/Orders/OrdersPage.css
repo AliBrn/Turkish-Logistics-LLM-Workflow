@@ -1,0 +1,152 @@
+.orders-page {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Sol Panel: Mesaj Listesi */
+.orders-page__messages {
+  width: 280px;
+  min-width: 280px;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-secondary);
+  overflow: hidden;
+}
+
+.orders-page__messages-header {
+  padding: 16px 16px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.orders-page__messages-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.orders-page__messages-count {
+  background: var(--bg-tertiary);
+  color: var(--text-tertiary);
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+}
+
+.orders-page__messages-search {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px 12px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 12px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.orders-page__messages-search:focus {
+  border-color: var(--accent);
+}
+
+.orders-page__messages-search::placeholder {
+  color: var(--text-tertiary);
+}
+
+.orders-page__messages-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Sağ Alan: Tablo + Detay */
+.orders-page__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.orders-page__table-header {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-secondary);
+}
+
+.orders-page__table-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.orders-page__table-count {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-weight: 400;
+}
+
+.orders-page__table-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.orders-page__filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.orders-page__filter-btn:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
+.orders-page__filter-btn--active {
+  background: var(--accent-subtle);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.orders-page__clear-btn {
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text-tertiary);
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.orders-page__clear-btn:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+}

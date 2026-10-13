@@ -1,0 +1,1369 @@
+{
+  "aciklama": "Benchmark için ana dataset içinden seçilmiş 30 sorunun cevap anahtarı. Sıralama soru kağıdı ile aynıdır.",
+  "kaynak_dosya": "lojistik_alpaca_object(2).json",
+  "toplam_ornek": 30,
+  "toplam_siparis_objesi": 146,
+  "secim_mantigi": {
+    "1_siparisli_basit": 5,
+    "2_siparisli": 5,
+    "3_siparisli": 5,
+    "4_5_siparisli_orta": 5,
+    "6_10_siparisli_zor": 5,
+    "11_plus_coklu_zor": 5
+  },
+  "not": "ornek_no ve kaynak_index soru kağıdı dosyasıyla birebir aynı sıradadır.",
+  "ornekler": [
+    {
+      "ornek_no": 1,
+      "kaynak_index": 1,
+      "zorluk_grubu": "1_siparisli_basit",
+      "siparis_sayisi": 1,
+      "expected_output": {
+        "siparis_sayisi": 1,
+        "siparisler": [
+          {
+            "nereden": "Mersin",
+            "nereye": "Batman",
+            "yuk_tipi": "YÜKÜSTÜ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 2,
+      "kaynak_index": 5,
+      "zorluk_grubu": "1_siparisli_basit",
+      "siparis_sayisi": 1,
+      "expected_output": {
+        "siparis_sayisi": 1,
+        "siparisler": [
+          {
+            "nereden": "İstanbul/Esenler",
+            "nereye": "Edirne/Keşan",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 3,
+      "kaynak_index": 8,
+      "zorluk_grubu": "1_siparisli_basit",
+      "siparis_sayisi": 1,
+      "expected_output": {
+        "siparis_sayisi": 1,
+        "siparisler": [
+          {
+            "nereden": "Tekirdağ/Çorlu",
+            "nereye": "Düzce",
+            "yuk_tipi": "PALETLİ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 4,
+      "kaynak_index": 19,
+      "zorluk_grubu": "1_siparisli_basit",
+      "siparis_sayisi": 1,
+      "expected_output": {
+        "siparis_sayisi": 1,
+        "siparisler": [
+          {
+            "nereden": "Samsun",
+            "nereye": "Bolu/Göynük",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 5,
+      "kaynak_index": 441,
+      "zorluk_grubu": "1_siparisli_basit",
+      "siparis_sayisi": 1,
+      "expected_output": {
+        "siparis_sayisi": 1,
+        "siparisler": [
+          {
+            "nereden": "Manisa",
+            "nereye": "İstanbul/Avcılar",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 6,
+      "kaynak_index": 10,
+      "zorluk_grubu": "2_siparisli",
+      "siparis_sayisi": 2,
+      "expected_output": {
+        "siparis_sayisi": 2,
+        "siparisler": [
+          {
+            "nereden": "İstanbul/Hadımköy",
+            "nereye": "Trabzon",
+            "yuk_tipi": "PALETLİ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "İstanbul/Hadımköy",
+            "nereye": "Trabzon",
+            "yuk_tipi": "PALETLİ",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 7,
+      "kaynak_index": 26,
+      "zorluk_grubu": "2_siparisli",
+      "siparis_sayisi": 2,
+      "expected_output": {
+        "siparis_sayisi": 2,
+        "siparisler": [
+          {
+            "nereden": "Antalya",
+            "nereye": "Denizli",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Antalya/Alanya",
+            "nereye": "Ankara",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "FRİGO"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 8,
+      "kaynak_index": 97,
+      "zorluk_grubu": "2_siparisli",
+      "siparis_sayisi": 2,
+      "expected_output": {
+        "siparis_sayisi": 2,
+        "siparisler": [
+          {
+            "nereden": "Manisa/Soma",
+            "nereye": "Çanakkale/Biga",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Manisa/Soma",
+            "nereye": "Bilecik/Osmaneli",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 9,
+      "kaynak_index": 293,
+      "zorluk_grubu": "2_siparisli",
+      "siparis_sayisi": 2,
+      "expected_output": {
+        "siparis_sayisi": 2,
+        "siparisler": [
+          {
+            "nereden": "Mardin",
+            "nereye": "Mersin",
+            "yuk_tipi": "YÜKÜSTÜ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "LOWBED"
+          },
+          {
+            "nereden": "Mardin",
+            "nereye": "Ankara",
+            "yuk_tipi": "YÜKÜSTÜ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "LOWBED"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 10,
+      "kaynak_index": 427,
+      "zorluk_grubu": "2_siparisli",
+      "siparis_sayisi": 2,
+      "expected_output": {
+        "siparis_sayisi": 2,
+        "siparisler": [
+          {
+            "nereden": "Samsun",
+            "nereye": "Erzurum",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Samsun",
+            "nereye": "İstanbul/Sultanbeyli",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 11,
+      "kaynak_index": 28,
+      "zorluk_grubu": "3_siparisli",
+      "siparis_sayisi": 3,
+      "expected_output": {
+        "siparis_sayisi": 3,
+        "siparisler": [
+          {
+            "nereden": "Bursa/Karacabey",
+            "nereye": "Balıkesir/Bandırma",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Bursa/Karacabey",
+            "nereye": "Bursa",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Bursa/Karacabey",
+            "nereye": "Balıkesir/Susurluk",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 12,
+      "kaynak_index": 38,
+      "zorluk_grubu": "3_siparisli",
+      "siparis_sayisi": 3,
+      "expected_output": {
+        "siparis_sayisi": 3,
+        "siparisler": [
+          {
+            "nereden": "Samsun",
+            "nereye": "Konya",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Samsun",
+            "nereye": "Konya/Ereğli",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Samsun",
+            "nereye": "İstanbul/Tuzla",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 13,
+      "kaynak_index": 316,
+      "zorluk_grubu": "3_siparisli",
+      "siparis_sayisi": 3,
+      "expected_output": {
+        "siparis_sayisi": 3,
+        "siparisler": [
+          {
+            "nereden": "Karaman",
+            "nereye": "Kocaeli/Gebze",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Konya/Ereğli",
+            "nereye": "İstanbul/Tuzla",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Konya",
+            "nereye": "İstanbul/Anadolu Yakası",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "FRİGO"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 14,
+      "kaynak_index": 685,
+      "zorluk_grubu": "3_siparisli",
+      "siparis_sayisi": 3,
+      "expected_output": {
+        "siparis_sayisi": 3,
+        "siparisler": [
+          {
+            "nereden": "Adana",
+            "nereye": "Mersin/Pozantı",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Adana",
+            "nereye": "Tekirdağ/Çorlu",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Adana",
+            "nereye": "Kocaeli/Gebze",
+            "yuk_tipi": "PALETLİ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 15,
+      "kaynak_index": 766,
+      "zorluk_grubu": "3_siparisli",
+      "siparis_sayisi": 3,
+      "expected_output": {
+        "siparis_sayisi": 3,
+        "siparisler": [
+          {
+            "nereden": "Tekirdağ/Hayrabolu",
+            "nereye": "İzmir/Çiğli",
+            "yuk_tipi": "PALETLİ",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "AÇIK"
+          },
+          {
+            "nereden": "Antalya/Serik",
+            "nereye": "İzmir/Bornova",
+            "yuk_tipi": "YÜKÜSTÜ",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "AÇIK"
+          },
+          {
+            "nereden": "İstanbul/Dudullu",
+            "nereye": "İzmir/Bornova",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "AÇIK"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 16,
+      "kaynak_index": 39,
+      "zorluk_grubu": "4_5_siparisli_orta",
+      "siparis_sayisi": 4,
+      "expected_output": {
+        "siparis_sayisi": 4,
+        "siparisler": [
+          {
+            "nereden": "Sakarya/Sapanca",
+            "nereye": "Samsun",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Sakarya/Sapanca",
+            "nereye": "Ankara",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Sakarya/Sapanca",
+            "nereye": "Muğla/Bodrum",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Sakarya/Sapanca",
+            "nereye": "İzmir",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 17,
+      "kaynak_index": 53,
+      "zorluk_grubu": "4_5_siparisli_orta",
+      "siparis_sayisi": 5,
+      "expected_output": {
+        "siparis_sayisi": 5,
+        "siparisler": [
+          {
+            "nereden": "Tekirdağ/Marmaraereğlisi",
+            "nereye": "Balıkesir/Burhaniye",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Tekirdağ/Malkara",
+            "nereye": "Sakarya/Kaynarca",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Manisa/Soma",
+            "nereye": "Eskişehir/Mihalıççık",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Balıkesir/Gönen",
+            "nereye": "Eskişehir/Mihalıççık",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "İzmir/Aliağa",
+            "nereye": "Eskişehir/Mihalıççık",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 18,
+      "kaynak_index": 426,
+      "zorluk_grubu": "4_5_siparisli_orta",
+      "siparis_sayisi": 4,
+      "expected_output": {
+        "siparis_sayisi": 4,
+        "siparisler": [
+          {
+            "nereden": "Kayseri",
+            "nereye": "Hatay",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Kayseri",
+            "nereye": "Hatay",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "İstanbul/Anadolu Yakası",
+            "nereye": "Denizli/Çardak",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          },
+          {
+            "nereden": "Ankara",
+            "nereye": "Kütahya",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 19,
+      "kaynak_index": 429,
+      "zorluk_grubu": "4_5_siparisli_orta",
+      "siparis_sayisi": 4,
+      "expected_output": {
+        "siparis_sayisi": 4,
+        "siparisler": [
+          {
+            "nereden": "Kocaeli/Gebze",
+            "nereye": "İstanbul/Esenyurt",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Kocaeli/Gebze",
+            "nereye": "Ankara/Kahramankazan",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Kocaeli/Gebze",
+            "nereye": "İstanbul/Esenyurt",
+            "yuk_tipi": "PALETLİ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Mersin/Akdeniz",
+            "nereye": "Ankara/Kahramankazan",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 20,
+      "kaynak_index": 435,
+      "zorluk_grubu": "4_5_siparisli_orta",
+      "siparis_sayisi": 5,
+      "expected_output": {
+        "siparis_sayisi": 5,
+        "siparisler": [
+          {
+            "nereden": "Tekirdağ/Çerkezköy/Velimeşe",
+            "nereye": "Antalya",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Tekirdağ/Çorlu/Vakıflar",
+            "nereye": "İstanbul/Beykoz",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "KAMYONET",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Tekirdağ/Çerkezköy/Velimeşe",
+            "nereye": "Manisa/Ahmetli",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Kırklareli/Lüleburgaz/Evrensekiz",
+            "nereye": "Malatya",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Tekirdağ/Malkara",
+            "nereye": "İstanbul/Tuzla",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "KAMYONET",
+            "kasa_tipi": "KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 21,
+      "kaynak_index": 21,
+      "zorluk_grubu": "6_10_siparisli_zor",
+      "siparis_sayisi": 6,
+      "expected_output": {
+        "siparis_sayisi": 6,
+        "siparisler": [
+          {
+            "nereden": "Bolu",
+            "nereye": "Ankara/Akyurt",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Bolu",
+            "nereye": "Ankara/Elmadağ/Hasanoğlan",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Bolu",
+            "nereye": "Ankara/Esenboğa",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Bolu",
+            "nereye": "Ankara/Elmadağ",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Bolu",
+            "nereye": "Ankara/Mamak",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Bolu",
+            "nereye": "Ankara/Karapürçek",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 22,
+      "kaynak_index": 37,
+      "zorluk_grubu": "6_10_siparisli_zor",
+      "siparis_sayisi": 7,
+      "expected_output": {
+        "siparis_sayisi": 7,
+        "siparisler": [
+          {
+            "nereden": "İzmir/Aliağa",
+            "nereye": "Ankara/Temelli",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Denizli",
+            "nereye": "Bolu",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "İzmir/Aliağa",
+            "nereye": "Eskişehir",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "İzmir/Aliağa",
+            "nereye": "Kayseri",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "İzmir/Aliağa",
+            "nereye": "Bolu/Göynük",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Muğla/Milas",
+            "nereye": "Kocaeli/Körfez/Hereke",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Balıkesir",
+            "nereye": "Ankara/Temelli",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 23,
+      "kaynak_index": 95,
+      "zorluk_grubu": "6_10_siparisli_zor",
+      "siparis_sayisi": 8,
+      "expected_output": {
+        "siparis_sayisi": 8,
+        "siparisler": [
+          {
+            "nereden": "Gaziantep",
+            "nereye": "İzmir",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Tekirdağ/Çerkezköy",
+            "nereye": "Samsun",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Tekirdağ/Çerkezköy",
+            "nereye": "Erzurum",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "İstanbul/Beylikdüzü",
+            "nereye": "Kocaeli/Gebze",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "İstanbul/Maltepe",
+            "nereye": "Ankara",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Kocaeli/Başiskele",
+            "nereye": "Sakarya",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Kocaeli/Gebze",
+            "nereye": "Ankara",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Kocaeli/Gebze",
+            "nereye": "İstanbul/Arnavutköy",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 24,
+      "kaynak_index": 666,
+      "zorluk_grubu": "6_10_siparisli_zor",
+      "siparis_sayisi": 7,
+      "expected_output": {
+        "siparis_sayisi": 7,
+        "siparisler": [
+          {
+            "nereden": "Samsun/Havza",
+            "nereye": "Tokat/Zile",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          },
+          {
+            "nereden": "Çankırı/Kurşunlu",
+            "nereye": "Tokat/Zile",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          },
+          {
+            "nereden": "Şanlıurfa",
+            "nereye": "Tokat/Zile",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          },
+          {
+            "nereden": "Ankara/İvedik",
+            "nereye": "Tokat/Zile",
+            "yuk_tipi": "YÜKÜSTÜ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          },
+          {
+            "nereden": "Sivas/Gemerek",
+            "nereye": "Tokat/Zile",
+            "yuk_tipi": "YÜKÜSTÜ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          },
+          {
+            "nereden": "Tokat/Zile",
+            "nereye": "Erzurum",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          },
+          {
+            "nereden": "Tokat/Zile",
+            "nereye": "Edirne/Keşan",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 25,
+      "kaynak_index": 793,
+      "zorluk_grubu": "6_10_siparisli_zor",
+      "siparis_sayisi": 6,
+      "expected_output": {
+        "siparis_sayisi": 6,
+        "siparisler": [
+          {
+            "nereden": "Kocaeli/Dilovası + İstanbul/Sultanbeyli",
+            "nereye": "İstanbul/Büyükçekmece",
+            "yuk_tipi": "PALETLİ",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Kocaeli/Dilovası + İstanbul/Tuzla",
+            "nereye": "İstanbul/Çatalca",
+            "yuk_tipi": "PALETLİ",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Kocaeli/Gebze + İstanbul/Ataşehir",
+            "nereye": "İstanbul/Çatalca",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Kocaeli/Dilovası + İstanbul/Kartal + İstanbul/Ataşehir",
+            "nereye": "İstanbul/Çatalca",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "İstanbul/Bağcılar 2 yer + Bahçelievler",
+            "nereye": "İstanbul/Çatalca",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Sakarya 2 yer",
+            "nereye": "İstanbul/Çatalca 2 yer",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 26,
+      "kaynak_index": 3,
+      "zorluk_grubu": "11_plus_coklu_zor",
+      "siparis_sayisi": 13,
+      "expected_output": {
+        "siparis_sayisi": 13,
+        "siparisler": [
+          {
+            "nereden": "Mersin",
+            "nereye": "Ankara",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "Konya",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "Samsun",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "Giresun",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "Erzurum",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "Van",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "Kayseri",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "Hatay",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "Kayseri",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "KAMYONET",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "Giresun",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "KAMYONET",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "Van",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "KAMYONET",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "Erzurum",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "KAMYONET",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "Hatay",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "KAMYONET",
+            "kasa_tipi": "FRİGO"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 27,
+      "kaynak_index": 9,
+      "zorluk_grubu": "11_plus_coklu_zor",
+      "siparis_sayisi": 13,
+      "expected_output": {
+        "siparis_sayisi": 13,
+        "siparisler": [
+          {
+            "nereden": "İzmir/Aliağa",
+            "nereye": "Ankara/Temelli",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Ankara/Temelli",
+            "nereye": "Ankara/Elmadağ/Hasanoğlan",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Hatay/Dörtyol",
+            "nereye": "Ankara/Temelli",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Hatay/Payas",
+            "nereye": "Ankara/Temelli",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Hatay/Payas",
+            "nereye": "Ankara/Temelli",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Hatay/Payas",
+            "nereye": "Kayseri/Bünyan",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Hatay/Payas",
+            "nereye": "Konya/Çumra",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Hatay/Payas",
+            "nereye": "Niğde",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Adana/Ceyhan",
+            "nereye": "Niğde",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Adana/Ceyhan",
+            "nereye": "Kayseri/Bünyan",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Kayseri/Pınarbaşı",
+            "nereye": "Çanakkale/Ezine",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Kayseri/Pınarbaşı",
+            "nereye": "Aydın/Söke",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          },
+          {
+            "nereden": "Muğla/Milas",
+            "nereye": "Kocaeli/Körfez/Hereke",
+            "yuk_tipi": "DÖKME",
+            "arac_tipi": "860",
+            "kasa_tipi": "DAMPERLİ"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 28,
+      "kaynak_index": 861,
+      "zorluk_grubu": "11_plus_coklu_zor",
+      "siparis_sayisi": 11,
+      "expected_output": {
+        "siparis_sayisi": 11,
+        "siparisler": [
+          {
+            "nereden": "Antalya",
+            "nereye": "Bursa/Kestel",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          },
+          {
+            "nereden": "Mersin/Akdeniz",
+            "nereye": "İzmir/Konak",
+            "yuk_tipi": "PALETLİ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Şırnak",
+            "nereye": "Hakkari",
+            "yuk_tipi": "YÜKÜSTÜ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "LOWBED"
+          },
+          {
+            "nereden": "Adana",
+            "nereye": "Kayseri",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Bursa/Karacabey",
+            "nereye": "Antalya",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          },
+          {
+            "nereden": "Şırnak",
+            "nereye": "Siirt",
+            "yuk_tipi": "YÜKÜSTÜ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "LOWBED"
+          },
+          {
+            "nereden": "Şırnak",
+            "nereye": "Şırnak",
+            "yuk_tipi": "YÜKÜSTÜ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "LOWBED"
+          },
+          {
+            "nereden": "Şırnak",
+            "nereye": "Muş",
+            "yuk_tipi": "YÜKÜSTÜ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "LOWBED"
+          },
+          {
+            "nereden": "Kayseri/Kocasinan",
+            "nereye": "Ankara/Polatlı",
+            "yuk_tipi": "PALETLİ",
+            "arac_tipi": "KAMYONET",
+            "kasa_tipi": "AÇIK"
+          },
+          {
+            "nereden": "Tekirdağ/Çorlu",
+            "nereye": "İstanbul/Maltepe",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "İstanbul",
+            "nereye": "Kocaeli/Gebze",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "KAMYONET",
+            "kasa_tipi": "AÇIK + KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 29,
+      "kaynak_index": 866,
+      "zorluk_grubu": "11_plus_coklu_zor",
+      "siparis_sayisi": 12,
+      "expected_output": {
+        "siparis_sayisi": 12,
+        "siparisler": [
+          {
+            "nereden": "Mersin/Akdeniz",
+            "nereye": "İzmir/Konak",
+            "yuk_tipi": "PALETLİ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Osmaniye",
+            "nereye": "Kayseri/Kocasinan",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          },
+          {
+            "nereden": "Edirne",
+            "nereye": "Bursa/Karacabey",
+            "yuk_tipi": "PALETLİ",
+            "arac_tipi": "KAMYONET",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Ankara/Yenimahalle",
+            "nereye": "Hatay/İskenderun",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "KAMYONET",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Hatay/Erzin",
+            "nereye": "Kocaeli/Dilovası",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          },
+          {
+            "nereden": "Konya",
+            "nereye": "Kocaeli/Gebze",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "İstanbul/Başakşehir",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "İstanbul/Sultanbeyli",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Hatay/Payas",
+            "nereye": "Ankara",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Mersin",
+            "nereye": "Antalya",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "KIRKAYAK",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Mersin/Akdeniz",
+            "nereye": "Muğla/Bodrum",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "6 TEKER",
+            "kasa_tipi": "KAPALI"
+          },
+          {
+            "nereden": "Gaziantep",
+            "nereye": "Adana/Kozan",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          }
+        ]
+      }
+    },
+    {
+      "ornek_no": 30,
+      "kaynak_index": 926,
+      "zorluk_grubu": "11_plus_coklu_zor",
+      "siparis_sayisi": 11,
+      "expected_output": {
+        "siparis_sayisi": 11,
+        "siparisler": [
+          {
+            "nereden": "İstanbul/Esenyurt",
+            "nereye": "Antalya",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "AÇIK + KAPALI + FRİGO + LOWBED"
+          },
+          {
+            "nereden": "Ankara",
+            "nereye": "Kocaeli/Gebze",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "FRİGO"
+          },
+          {
+            "nereden": "Adana",
+            "nereye": "Hatay",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Kocaeli/Gebze",
+            "nereye": "Ankara",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "AÇIK + KAPALI + FRİGO + LOWBED"
+          },
+          {
+            "nereden": "İstanbul/Büyükçekmece",
+            "nereye": "Mersin/Tarsus",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "10 TEKER",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Hakkari",
+            "nereye": "Siirt",
+            "yuk_tipi": "YÜKÜSTÜ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "LOWBED"
+          },
+          {
+            "nereden": "Antalya/Kepez",
+            "nereye": "İstanbul/Beylikdüzü",
+            "yuk_tipi": "PARÇA",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Hakkari",
+            "nereye": "Bitlis",
+            "yuk_tipi": "YÜKÜSTÜ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "LOWBED"
+          },
+          {
+            "nereden": "Hakkari",
+            "nereye": "Muş",
+            "yuk_tipi": "YÜKÜSTÜ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "LOWBED"
+          },
+          {
+            "nereden": "Mersin/Tarsus",
+            "nereye": "İstanbul/Eyüpsultan",
+            "yuk_tipi": "PALETLİ",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK + KAPALI"
+          },
+          {
+            "nereden": "Hatay/Samandağ",
+            "nereye": "Adana/Yumurtalık",
+            "yuk_tipi": "KOMPLE",
+            "arac_tipi": "1360",
+            "kasa_tipi": "AÇIK"
+          }
+        ]
+      }
+    }
+  ]
+}
